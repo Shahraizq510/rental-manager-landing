@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rental Manager — Simple rent collection + property management</title>
+  <meta name="description" content="Rental Manager helps landlords and tenants manage rent payments, leases, and maintenance — with ACH in-app payments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">RM</div>
+        <span>Rental Manager</span>
+      </div>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--primary" href="#cta">Join the waitlist</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="pill">In-app rent payments (ACH) • Lease + tenant workflow</p>
+          <h1>Collect rent, track leases, and stay organized — without the chaos.</h1>
+          <p class="lead">Rental Manager is a modern way to manage your rentals: tenants pay via ACH in-app, you get clean records, and everyone stays on the same page.</p>
+          <div class="hero__cta" id="cta">
+            <a class="btn btn--primary" href="mailto:hello@example.com?subject=Rental%20Manager%20waitlist">Join the waitlist</a>
+            <a class="btn btn--ghost" href="#features">See features</a>
+          </div>
+          <p class="fine">Early access is limited. No spam.</p>
+        </div>
+        <div class="card mock">
+          <div class="mock__top">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+          <div class="mock__body">
+            <div class="stat">
+              <div>
+                <div class="stat__label">This month collected</div>
+                <div class="stat__value">$8,450</div>
+              </div>
+              <div class="badge">ACH</div>
+            </div>
+            <div class="list">
+              <div class="row"><span>Unit 2B — Rent</span><span class="ok">Paid</span></div>
+              <div class="row"><span>Unit 3A — Rent</span><span class="ok">Paid</span></div>
+              <div class="row"><span>Unit 1C — Rent</span><span class="warn">Due</span></div>
+            </div>
+            <div class="callout">Automatic receipts + ledger history for every payment.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="cols3">
+          <div class="tile">
+            <h3>1) Invite tenants</h3>
+            <p>Add a unit and send an invite. Tenants get a simple pay-rent flow.</p>
+          </div>
+          <div class="tile">
+            <h3>2) Tenants pay via ACH</h3>
+            <p>ACH inside the app (Stripe + Plaid). Clean tracking, fewer fees than cards.</p>
+          </div>
+          <div class="tile">
+            <h3>3) You get payouts + records</h3>
+            <p>Payouts land in your bank account, with a tidy ledger for taxes and reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Built for landlords & tenants</h2>
+        <div class="cols2">
+          <div class="tile">
+            <h3>For landlords</h3>
+            <ul>
+              <li>Rent collection & ledger history</li>
+              <li>Lease tracking (start/end, rent, deposits)</li>
+              <li>Automated receipts & reminders</li>
+              <li>Simple dashboard for units & tenants</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3>For tenants</h3>
+            <ul>
+              <li>Pay rent via bank transfer (ACH)</li>
+              <li>Receipts on every payment</li>
+              <li>Clear due dates & balance history</li>
+              <li>Optional maintenance requests (coming soon)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Is this available now?</summary>
+            <p>We’re building the first version. Join the waitlist to get early access.</p>
+          </details>
+          <details>
+            <summary>Do you support ACH?</summary>
+            <p>Yes — the plan is in-app ACH payments (Stripe ACH / Plaid) with payouts to the landlord.</p>
+          </details>
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>Pricing is TBD. Early users will get preferred pricing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container cta">
+        <h2>Want early access?</h2>
+        <p>Tell us what you manage and we’ll reach out when the beta is ready.</p>
+        <a class="btn btn--primary" href="mailto:hello@example.com?subject=Rental%20Manager%20waitlist">Join the waitlist</a>
+        <p class="fine">Update the email link when you have a real waitlist form.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="y"></span> Rental Manager</span>
+      <a href="mailto:hello@example.com">hello@example.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
