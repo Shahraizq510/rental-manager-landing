@@ -3,144 +3,216 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rental Manager — Simple rent collection + property management</title>
-  <meta name="description" content="Rental Manager helps landlords and tenants manage rent payments, leases, and maintenance — with ACH in-app payments." />
+  <title>EZPM LLC — Manage rentals smarter</title>
+  <meta name="description" content="EZPM LLC is a U.S.-based property management platform for landlords and tenants: rent collection (ACH), lease management, screening, and maintenance tracking." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav__inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true">RM</div>
-        <span>Rental Manager</span>
+        <div class="logo" aria-hidden="true">EZ</div>
+        <span>EZPM LLC</span>
       </div>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#how">How it works</a>
+        <a href="#roles">Roles</a>
         <a href="#features">Features</a>
-        <a href="#faq">FAQ</a>
+        <a href="#about">Company</a>
       </nav>
-      <a class="btn btn--primary" href="#cta">Join the waitlist</a>
+      <a class="btn btn--primary" href="#roles">Get Started</a>
     </div>
   </header>
 
   <main>
+    <!-- 1) HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div>
-          <p class="pill">In-app rent payments (ACH) • Lease + tenant workflow</p>
-          <h1>Collect rent, track leases, and stay organized — without the chaos.</h1>
-          <p class="lead">Rental Manager is a modern way to manage your rentals: tenants pay via ACH in-app, you get clean records, and everyone stays on the same page.</p>
-          <div class="hero__cta" id="cta">
-            <a class="btn btn--primary" href="mailto:hello@example.com?subject=Rental%20Manager%20waitlist">Join the waitlist</a>
+          <p class="pill">Dark theme • Glass UI • Blue/Purple accent</p>
+          <h1>Manage rentals smarter — for landlords and tenants.</h1>
+          <p class="lead">EZPM LLC is a U.S.-based property management platform designed to streamline rent collection (ACH), lease management, tenant screening, and maintenance tracking — with a dedicated experience for each role.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#roles">Get Started</a>
             <a class="btn btn--ghost" href="#features">See features</a>
           </div>
-          <p class="fine">Early access is limited. No spam.</p>
+          <p class="fine">Simple, focused dashboards. No clutter.</p>
         </div>
-        <div class="card mock">
+
+        <!-- 3) PRODUCT PREVIEW (right side) -->
+        <div class="card glass">
           <div class="mock__top">
             <div class="dot"></div><div class="dot"></div><div class="dot"></div>
           </div>
           <div class="mock__body">
-            <div class="stat">
-              <div>
-                <div class="stat__label">This month collected</div>
-                <div class="stat__value">$8,450</div>
+            <div class="section__kicker">Product preview</div>
+            <div class="previewGrid">
+              <!-- Landlord dashboard preview -->
+              <div class="dash">
+                <div class="dash__head">
+                  <div class="dash__title">Landlord dashboard</div>
+                  <div class="chip">This month</div>
+                </div>
+                <div class="kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Rent collected</div>
+                    <div class="kpi__value">$24,820</div>
+                    <div class="kpi__note">ACH deposits • 98% on-time</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Units</div>
+                    <div class="kpi__value">18</div>
+                    <div class="kpi__note">2 vacant • 16 occupied</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Statuses</div>
+                    <div class="kpi__value">3 open</div>
+                    <div class="kpi__note">1 urgent • 2 normal</div>
+                  </div>
+                </div>
+                <div class="list compact">
+                  <div class="row"><span>Unit 12B — Rent</span><span class="status ok">Paid</span></div>
+                  <div class="row"><span>Unit 7A — Renewal</span><span class="status info">In progress</span></div>
+                  <div class="row"><span>Unit 3C — Work order</span><span class="status warn">Action</span></div>
+                </div>
               </div>
-              <div class="badge">ACH</div>
+
+              <!-- Tenant dashboard preview -->
+              <div class="dash">
+                <div class="dash__head">
+                  <div class="dash__title">Tenant dashboard</div>
+                  <div class="chip">Next due: Apr 1</div>
+                </div>
+                <div class="kpis">
+                  <div class="kpi">
+                    <div class="kpi__label">Rent payment</div>
+                    <div class="kpi__value">$1,850</div>
+                    <div class="kpi__note">Autopay enabled (ACH)</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Lease info</div>
+                    <div class="kpi__value">Active</div>
+                    <div class="kpi__note">Ends: 12/31/2026</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Requests</div>
+                    <div class="kpi__value">1 open</div>
+                    <div class="kpi__note">Kitchen faucet</div>
+                  </div>
+                </div>
+                <div class="list compact">
+                  <div class="row"><span>April rent</span><span class="status info">Scheduled</span></div>
+                  <div class="row"><span>Lease documents</span><span class="status ok">Available</span></div>
+                  <div class="row"><span>Maintenance</span><span class="status info">Assigned</span></div>
+                </div>
+              </div>
             </div>
-            <div class="list">
-              <div class="row"><span>Unit 2B — Rent</span><span class="ok">Paid</span></div>
-              <div class="row"><span>Unit 3A — Rent</span><span class="ok">Paid</span></div>
-              <div class="row"><span>Unit 1C — Rent</span><span class="warn">Due</span></div>
-            </div>
-            <div class="callout">Automatic receipts + ledger history for every payment.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="how">
+    <!-- 2) ROLE SELECTION (critical) -->
+    <section class="section" id="roles">
       <div class="container">
-        <h2>How it works</h2>
-        <div class="cols3">
-          <div class="tile">
-            <h3>1) Invite tenants</h3>
-            <p>Add a unit and send an invite. Tenants get a simple pay-rent flow.</p>
-          </div>
-          <div class="tile">
-            <h3>2) Tenants pay via ACH</h3>
-            <p>ACH inside the app (Stripe + Plaid). Clean tracking, fewer fees than cards.</p>
-          </div>
-          <div class="tile">
-            <h3>3) You get payouts + records</h3>
-            <p>Payouts land in your bank account, with a tidy ledger for taxes and reporting.</p>
-          </div>
+        <div class="section__head">
+          <h2>Choose your role</h2>
+          <p class="section__sub">Two dedicated apps — focused workflows for each side.</p>
+        </div>
+
+        <div class="roles">
+          <a class="roleCard" href="/app/landlord">
+            <div class="roleCard__top">
+              <div>
+                <div class="roleCard__title">Landlord</div>
+                <div class="roleCard__desc">Manage properties, tenants, payments</div>
+              </div>
+              <div class="badge">/app/landlord</div>
+            </div>
+            <div class="roleCard__cta">
+              <span class="btn btn--primary btn--small">Go to Landlord app</span>
+              <span class="btn btn--ghost btn--small">Preview above</span>
+            </div>
+          </a>
+
+          <a class="roleCard" href="/app/tenant">
+            <div class="roleCard__top">
+              <div>
+                <div class="roleCard__title">Tenant</div>
+                <div class="roleCard__desc">Pay rent, manage lease, submit requests</div>
+              </div>
+              <div class="badge">/app/tenant</div>
+            </div>
+            <div class="roleCard__cta">
+              <span class="btn btn--primary btn--small">Go to Tenant app</span>
+              <span class="btn btn--ghost btn--small">Preview above</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- 4) FEATURES -->
     <section class="section" id="features">
       <div class="container">
-        <h2>Built for landlords & tenants</h2>
-        <div class="cols2">
+        <div class="section__head">
+          <h2>Features</h2>
+          <p class="section__sub">Core tools for clean operations — payments, leases, screening, and maintenance.</p>
+        </div>
+
+        <div class="cols4">
           <div class="tile">
-            <h3>For landlords</h3>
-            <ul>
-              <li>Rent collection & ledger history</li>
-              <li>Lease tracking (start/end, rent, deposits)</li>
-              <li>Automated receipts & reminders</li>
-              <li>Simple dashboard for units & tenants</li>
-            </ul>
+            <h3>Rent collection (ACH)</h3>
+            <p>Collect rent via ACH, support autopay, and track paid / pending / overdue statuses.</p>
           </div>
           <div class="tile">
-            <h3>For tenants</h3>
-            <ul>
-              <li>Pay rent via bank transfer (ACH)</li>
-              <li>Receipts on every payment</li>
-              <li>Clear due dates & balance history</li>
-              <li>Optional maintenance requests (coming soon)</li>
-            </ul>
+            <h3>Lease management</h3>
+            <p>Keep leases organized with clear terms, renewal workflows, and easy access for both parties.</p>
+          </div>
+          <div class="tile">
+            <h3>Tenant screening</h3>
+            <p>Standardize applications and screening steps so decisions stay consistent and documented.</p>
+          </div>
+          <div class="tile">
+            <h3>Maintenance tracking</h3>
+            <p>Requests, updates, and vendor assignment — all tracked in one place with a clear timeline.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="faq">
+    <!-- 5) COMPANY -->
+    <section class="section" id="about">
       <div class="container">
-        <h2>FAQ</h2>
-        <div class="faq">
-          <details>
-            <summary>Is this available now?</summary>
-            <p>We’re building the first version. Join the waitlist to get early access.</p>
-          </details>
-          <details>
-            <summary>Do you support ACH?</summary>
-            <p>Yes — the plan is in-app ACH payments (Stripe ACH / Plaid) with payouts to the landlord.</p>
-          </details>
-          <details>
-            <summary>How much does it cost?</summary>
-            <p>Pricing is TBD. Early users will get preferred pricing.</p>
-          </details>
+        <div class="about">
+          <div>
+            <h2>About EZPM LLC</h2>
+            <p class="lead" style="font-size:16px;max-width:70ch">EZPM LLC focuses on managing rental properties across the U.S. We build software that makes renting simpler and more transparent for landlords and tenants.</p>
+          </div>
+          <div class="about__facts">
+            <div class="tile">
+              <div class="fact__k">Coverage</div>
+              <div class="fact__v">Rental properties across the U.S.</div>
+            </div>
+            <div class="tile">
+              <div class="fact__k">Dual-role UX</div>
+              <div class="fact__v">Dedicated landlord + tenant dashboards</div>
+            </div>
+            <div class="tile">
+              <div class="fact__k">Payments</div>
+              <div class="fact__v">ACH rent collection</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section section--cta">
-      <div class="container cta">
-        <h2>Want early access?</h2>
-        <p>Tell us what you manage and we’ll reach out when the beta is ready.</p>
-        <a class="btn btn--primary" href="mailto:hello@example.com?subject=Rental%20Manager%20waitlist">Join the waitlist</a>
-        <p class="fine">Update the email link when you have a real waitlist form.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="y"></span> Rental Manager</span>
+      <span>© <span id="y"></span> EZPM LLC</span>
       <a href="mailto:hello@example.com">hello@example.com</a>
     </div>
   </footer>
